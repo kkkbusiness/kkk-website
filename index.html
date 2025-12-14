@@ -215,9 +215,10 @@
     }
 
     .icon {
-      width: 44px;
-      height: 44px;
-      margin-bottom: 16px;
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+      margin-bottom: 0;
       color: var(--primary);
     }
 
@@ -305,6 +306,15 @@
 
       .hero h1 { font-size: 2.2rem; }
     }
+  @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .logo-carousel:hover .logo-track {
+      animation-play-state: paused;
+    }
+
   </style>
 </head>
 <body>
@@ -345,7 +355,7 @@
 
         <div class="stats">
           <div class="stat"><strong>20+</strong>Years of Industry Experience</div>
-          <div class="stat"><strong>7–8</strong>Dedicated Team Members</div>
+          <div class="stat"><strong>Established</strong>Founder‑Led Operations</div>
           <div class="stat"><strong>100%</strong>Process Compliance Focus</div>
         </div>
       </div>
@@ -355,23 +365,27 @@
   </section>
 
   <!-- Services -->
+    <!-- Solutions for Lenders -->
   <section id="solutions" class="alt">
     <div class="container reveal">
       <h2>Solutions for Lenders</h2>
-      <p>Structured recovery solutions designed to align with lender policies, regulatory requirements, and portfolio performance objectives.</p>
+      <p>Operationally focused recovery solutions designed to integrate seamlessly with lender frameworks, governance standards, and portfolio objectives.</p>
 
       <div class="services">
         <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg>
           <h3>Early & Mid-Stage Collections</h3>
-          <p>Systematic engagement for soft and mid-stage delinquency buckets, focused on resolution, repayment discipline, and customer dignity.</p>
+          <p>Structured engagement across soft and mid-stage delinquency buckets with disciplined follow-ups, respectful communication, and resolution focus.</p>
         </div>
         <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
           <h3>Portfolio-Based Recovery</h3>
-          <p>Dedicated handling of assigned portfolios with bucket-wise strategies, escalation controls, and transparent reporting.</p>
+          <p>Dedicated handling of allocated portfolios using bucket-wise strategies, defined escalation paths, and structured reporting.</p>
         </div>
         <div class="card">
-          <h3>Compliance-Driven Operations</h3>
-          <p>All activities executed strictly within lender-defined frameworks, ensuring regulatory adherence and reputational protection.</p>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg>
+          <h3>Governance & Compliance Alignment</h3>
+          <p>Operations executed strictly within lender-approved frameworks, regulatory expectations, and documented recovery processes.</p>
         </div>
       </div>
     </div>
@@ -396,55 +410,59 @@
         </div>
       </div>
 
-      <div style="margin-top:40px">
+            <div style="margin-top:48px">
         <h3>Institutions Worked With</h3>
-        <p style="font-size:.9rem;color:var(--muted)">Representative institutions shown for industry exposure only. No endorsement, partnership, or affiliation is implied.</p>
-        <div style="display:flex;gap:28px;align-items:center;margin-top:20px;opacity:.85;flex-wrap:wrap">
-          <!-- Generic Bank -->
-          <svg height="38" viewBox="0 0 300 80" aria-label="Private Sector Bank" style="filter:grayscale(100%) brightness(1.1)">
-            <rect width="300" height="80" rx="10" fill="none" />
-            <text x="18" y="52" font-size="36" font-weight="700" fill="#9ca3af" font-family="Inter, Arial">PRIVATE BANK</text>
-          </svg>
+        <p style="font-size:.9rem;color:var(--muted)">Logos represent operational exposure and recovery assignments. No endorsement, partnership, or agency relationship is implied.</p>
 
-          <!-- Generic NBFC -->
-          <svg height="38" viewBox="0 0 300 80" aria-label="NBFC" style="filter:grayscale(100%) brightness(1.1)">
-            <rect width="300" height="80" rx="10" fill="none" />
-            <text x="18" y="52" font-size="36" font-weight="700" fill="#9ca3af" font-family="Inter, Arial">NBFC PARTNER</text>
-          </svg>
-
-          <!-- Generic Financial Institution -->
-          <svg height="38" viewBox="0 0 300 80" aria-label="Financial Institution" style="filter:grayscale(100%) brightness(1.1)">
-            <rect width="300" height="80" rx="10" fill="none" />
-            <text x="18" y="52" font-size="32" font-weight="700" fill="#9ca3af" font-family="Inter, Arial">FINANCIAL INSTITUTION</text>
-          </svg>
+        <div class="logo-carousel" style="margin-top:28px;overflow:hidden;position:relative">
+          <div class="logo-track" style="display:flex;gap:64px;align-items:center;animation:scroll 35s linear infinite;opacity:.8;will-change:transform">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/AXISBank_Logo.svg" alt="Axis Bank" style="height:36px;filter:grayscale(100%) brightness(1.05)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Bajaj_Finserv_Logo.svg" alt="Bajaj Finance" style="height:34px;filter:grayscale(100%) brightness(1.05)">
+            <img src="https://latestlogo.com/wp-content/uploads/2024/01/onecard-logo.png" alt="OneCard" style="height:32px;filter:grayscale(100%) brightness(1.05)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/AXISBank_Logo.svg" alt="Axis Bank" style="height:36px;filter:grayscale(100%) brightness(1.05)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Bajaj_Finserv_Logo.svg" alt="Bajaj Finance" style="height:34px;filter:grayscale(100%) brightness(1.05)">
+            <img src="https://latestlogo.com/wp-content/uploads/2024/01/onecard-logo.png" alt="OneCard" style="height:32px;filter:grayscale(100%) brightness(1.05)">
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
+    <!-- Compliance -->
   <section id="compliance" class="alt">
     <div class="container reveal">
       <h2>Compliance & Ethical Practices</h2>
-      <p>KKK Business Solutions conducts all recovery and collection activities in strict alignment with lender guidelines and applicable regulations.</p>
-      <ul style="margin-top:24px;color:var(--muted);line-height:1.8">
-        <li>Respectful and ethical customer engagement</li>
-        <li>Adherence to institutional recovery policies</li>
-        <li>Confidential handling of customer and portfolio data</li>
-        <li>Clear escalation and reporting mechanisms</li>
-      </ul>
-      <p style="margin-top:20px;font-size:.9rem;color:var(--muted)">All operational activities are governed by internal controls to ensure transparency, accountability, and compliance.</p>
+      <p>All recovery and collection activities are conducted with strict adherence to lender policies, regulatory requirements, and ethical engagement standards.</p>
+
+      <div class="services" style="margin-top:40px">
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg>
+          <h3>Policy Adherence</h3>
+          <p>Strict alignment with institutional recovery policies, approved communication practices, and escalation protocols.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/></svg>
+          <h3>Data Confidentiality</h3>
+          <p>Secure handling of customer and portfolio data with controlled access and confidentiality safeguards.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18"/><path d="M12 3v18"/></svg>
+          <h3>Ethical Engagement</h3>
+          <p>Respectful borrower interactions, transparent communication, and zero-tolerance for coercive practices.</p>
+        </div>
+      </div>
     </div>
   </section>
 
+    <!-- Contact -->
   <section id="contact" class="alt">
     <div class="container contact reveal">
       <div>
         <h2>Contact</h2>
-        <div class="contact-item"><strong>Address</strong><br>119, Srinivasan Tower, 1st Floor<br>Srinivasan Nagar, 2nd Main Road<br>Kolathur, Chennai – 600099</div>
-        <div class="contact-item"><strong>Phone</strong><br>+91 97899 42943</div>
-        <div class="contact-item"><strong>Email</strong><br>sreedharmohan@kkkbusiness.in</div>
+        <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg><strong>Address</strong><br>119, Srinivasan Tower, 1st Floor<br>Srinivasan Nagar, 2nd Main Road<br>Kolathur, Chennai – 600099</div>
+        <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92V21a2 2 0 01-2.18 2A19.86 19.86 0 013 5.18 2 2 0 015 3h4.09a2 2 0 012 1.72l.7 4.23a2 2 0 01-.45 1.82L9.91 12.91"/></svg><strong>Phone</strong><br>+91 97899 42943</div>
+        <div class="contact-item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg><strong>Email</strong><br>sreedharmohan@kkkbusiness.in</div>
       </div>
 
       <form>
@@ -453,6 +471,10 @@
         <textarea rows="4" placeholder="Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
+    </div>
+        <div style="margin-top:40px;border-radius:18px;overflow:hidden;border:1px solid var(--border)">
+        <iframe title="KKK Business Solutions Location" src="https://www.google.com/maps?q=Kolathur%20Chennai%20600099&output=embed" width="100%" height="260" style="border:0;filter:grayscale(100%) invert(90%)" loading="lazy"></iframe>
+      </div>
     </div>
   </section>
 
