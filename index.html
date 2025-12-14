@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KKK Business Solutions - 25+ years of expertise in Bajaj financing, collection management, and recovery operations. Trusted service provider for financial institutions.">
+    <meta name="keywords" content="collection services, recovery operations, Bajaj financing, NBFC, financial services, debt collection, portfolio management">
+    <meta name="author" content="KKK Business Solutions">
+    <meta property="og:title" content="KKK Business Solutions - Financial Services Excellence">
+    <meta property="og:description" content="25+ years delivering trusted collection, servicing, and recovery solutions for Bajaj financing products.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://kkk-business-solutions.com">
+    <title>KKK Business Solutions - Bajaj Financing & Collection Services</title>
+    <style>
+        :root {
+            --color-primary: #1e40af;
+            --color-secondary: #0f766e;
+            --color-accent: #ea580c;
+            --color-text: #1f2937;
+            --color-text-light: #6b7280;
+            --color-bg: #ffffff;
+            --color-bg-light: #f9fafb;
+            --color-border: #e5e7eb;
+            --color-success: #10b981;
+            --color-error: #ef4444;
+            --space-4: 4px;
+            --space-8: 8px;
+            --space-12: 12px;
+            --space-16: 16px;
+            --space-20: 20px;
+            --space-24: 24px;
+            --space-32: 32px;
+            --radius: 8px;
+            --radius-lg: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+        }
+
+        /* Typography */
+        h1 { font-size: 2.5rem; line-height: 1.2; font-weight: 700; margin-bottom: var(--space-16); }
+        h2 { font-size: 2rem; line-height: 1.3; font-weight: 700; margin-bottom: var(--space-12); }
+        h3 { font-size: 1.5rem; line-height: 1.4; font-weight: 600; margin-bottom: var(--space-12); }
+        h4 { font-size: 1.25rem; font-weight: 600; margin-bottom: var(--space-8); }
+        p { margin-bottom: var(--space-16); color: var(--color-text-light); }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: var(--color-bg);
+            border-bottom: 1px solid var(--color-border);
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-16) var(--space-20);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--space-24);
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-primary);
+        }
+
+        .nav-links .cta-btn {
+            background: var(--color-primary);
+            color: white;
+            padding: var(--space-8) var(--space-16);
+            border-radius: var(--radius);
+            transition: background 0.3s ease;
+        }
+
+        .nav-links .cta-btn:hover {
+            background: var(--color-secondary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            padding: 80px var(--space-20);
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            color: white;
+            margin-bottom: var(--space-16);
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: var(--space-24);
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: var(--space-12) var(--space-24);
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--color-accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #d74308;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(234, 88, 12, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-primary);
+            margin-left: var(--space-12);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-bg-light);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-20);
+        }
+
+        /* Section */
+        section {
+            padding: 80px var(--space-20);
+        }
+
+        .section-alt {
+            background: var(--color-bg-light);
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-32);
+            align-items: center;
+            margin-top: var(--space-24);
+        }
+
+        .about-content h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--space-12);
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-16);
+            margin-top: var(--space-32);
+        }
+
+        .stat {
+            text-align: center;
+            padding: var(--space-16);
+            background: var(--color-bg-light);
+            border-radius: var(--radius-lg);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .stat-label {
+            color: var(--color-text-light);
+            font-weight: 500;
+            margin-top: var(--space-8);
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-24);
+            margin-top: var(--space-32);
+        }
+
+        .service-card {
+            background: var(--color-bg);
+            padding: var(--space-24);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-border);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+            border-color: var(--color-primary);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-16);
+            font-size: 1.5rem;
+        }
+
+        .service-card h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--space-12);
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+        }
+
+        /* Why Choose Us */
+        .features-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-24);
+            margin-top: var(--space-24);
+        }
+
+        .feature-item {
+            display: flex;
+            gap: var(--space-16);
+        }
+
+        .feature-check {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            background: var(--color-success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Experience Section */
+        .experience-content {
+            background: var(--color-bg);
+            padding: var(--space-32);
+            border-radius: var(--radius-lg);
+            border-left: 4px solid var(--color-accent);
+        }
+
+        .experience-highlight {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-24);
+            margin-top: var(--space-24);
+        }
+
+        .highlight-box {
+            padding: var(--space-24);
+            background: var(--color-bg-light);
+            border-radius: var(--radius);
+        }
+
+        .highlight-box h4 {
+            color: var(--color-primary);
+            margin-bottom: var(--space-8);
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-32);
+            margin-top: var(--space-24);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-20);
+        }
+
+        .contact-item {
+            display: flex;
+            gap: var(--space-16);
+        }
+
+        .contact-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+        }
+
+        .contact-details h4 {
+            margin-top: 0;
+            margin-bottom: var(--space-4);
+        }
+
+        .contact-details p {
+            margin: 0;
+        }
+
+        /* Form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-16);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: var(--space-8);
+            font-weight: 500;
+            color: var(--color-text);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: var(--space-12);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-text);
+            color: white;
+            padding: var(--space-32) var(--space-20);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-24);
+            margin-bottom: var(--space-32);
+        }
+
+        .footer-section h4 {
+            color: white;
+            margin-bottom: var(--space-16);
+        }
+
+        .footer-section p, .footer-section a {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: var(--space-8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: var(--space-24);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            
+            .nav-links {
+                display: none;
+            }
+
+            .about-grid,
+            .services-grid,
+            .features-list,
+            .experience-highlight,
+            .contact-grid,
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-secondary {
+                margin-left: 0;
+                margin-top: var(--space-12);
+            }
+
+            .hero {
+                padding: 60px var(--space-20);
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 60px var(--space-20);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">KKK Business Solutions</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="cta-btn">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Financial Services Excellence for Bajaj Financing</h1>
+            <p>25+ Years of Trusted Collection, Servicing & Recovery Solutions</p>
+            <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+            <a href="#services" class="btn btn-secondary">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About KKK Business Solutions</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Established Trust & Expertise</h3>
+                    <p>With over 25 years of dedicated service, KKK Business Solutions has established itself as a reliable partner for financial institutions. Our proprietor, M Sreedharan, leads a team of 7-8 specialized professionals committed to delivering exceptional results.</p>
+                    <p>As an authorized representative of Bajaj, we specialize in comprehensive financial services including collection management, portfolio administration, and recovery operations. Our track record demonstrates our commitment to excellence and customer satisfaction.</p>
+                    <p><strong>Location:</strong> Korattur, Chennai - 600080</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Years of Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">7-8</div>
+                            <div class="stat-label">Dedicated Team Members</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Bajaj Compliance</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="background: linear-gradient(135deg, #1e40af 0%, #0f766e 100%); height: 400px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        🏢
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-alt">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto var(--space-24);">We deliver comprehensive financial services solutions tailored for Bajaj financing products and recovery operations.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Collection Management</h3>
+                    <p>Efficient and timely management of Bajaj X Profile accounts with streamlined processing and compliance adherence to ensure optimal results.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Portfolio Administration</h3>
+                    <p>Professional administration of Bucket 3 Profile portfolios with meticulous accuracy and full compliance with Bajaj's operational standards.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Recovery Operations</h3>
+                    <p>Strategic recovery operations focused on maximizing customer satisfaction while delivering efficient and effective recovery processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section>
+        <div class="container">
+            <h2>Why Choose KKK Business Solutions?</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-check">✓</div>
+                    <div>
+                        <h4>25+ Years Proven Track Record</h4>
+                        <p>Decades of successful service delivery in collection and recovery operations.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-check">✓</div>
+                    <div>
+                        <h4>Authorized Bajaj Representative</h4>
+                        <p>Fully authorized and trusted partner for Bajaj financing products and services.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-check">✓</div>
+                    <div>
+                        <h4>Specialized Team</h4>
+                        <p>Dedicated team of 7-8 professionals including 2 specialized callers for optimal efficiency.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-check">✓</div>
+                    <div>
+                        <h4>Compliance Excellence</h4>
+                        <p>100% adherence to Bajaj standards and all applicable financial regulations.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-check">✓</div>
+                    <div>
+                        <h4>Customer Focused</h4>
+                        <p>Commitment to maximizing customer satisfaction in every operation and interaction.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-check">✓</div>
+                    <div>
+                        <h4>Local Expertise</h4>
+                        <p>Deep understanding of regional market dynamics and local business requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-alt">
+        <div class="container">
+            <h2>Our Expertise in Action</h2>
+            <div class="experience-content">
+                <h3>Comprehensive Service Delivery</h3>
+                <p>Over 25 years, we've refined our processes to deliver maximum efficiency and effectiveness across all service areas. Our hands-on approach, led by Proprietor M Sreedharan, ensures personal oversight of quality and compliance.</p>
+                
+                <div class="experience-highlight">
+                    <div class="highlight-box">
+                        <h4>X Profile Collection</h4>
+                        <p>Specialized management of X Profile accounts with timely processing and systematic collection strategies that prioritize results and compliance.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Bucket 3 Administration</h4>
+                        <p>Meticulous portfolio management for Bucket 3 Profile accounts with accuracy, precision, and adherence to all operational guidelines.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Recovery Excellence</h4>
+                        <p>Focused recovery operations that balance customer satisfaction with operational efficiency, delivering measurable results consistently.</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>Quality Assurance</h4>
+                        <p>Continuous quality monitoring and improvement to maintain Bajaj standards and exceed client expectations at every level.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch With Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Ready to discuss how KKK Business Solutions can support your financial services needs? Reach out to us today.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>15/10, 3rd Street, Sivasakti Nagar<br>Korattur, Chennai - 600080<br>India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:k3.business.solution@gmail.com" style="color: var(--color-primary);">k3.business.solution@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919789942943" style="color: var(--color-primary);">+91 97899-42943</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" placeholder="Your company">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="How can we help?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Tell us more about your inquiry..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>KKK Business Solutions</h4>
+                    <p>25+ years of trusted financial services, collection, and recovery operations for Bajaj financing products.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="#services">Collection Management</a><br>
+                    <a href="#services">Portfolio Administration</a><br>
+                    <a href="#services">Recovery Operations</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#about">About Us</a><br>
+                    <a href="#experience">Experience</a><br>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 <a href="mailto:k3.business.solution@gmail.com">k3.business.solution@gmail.com</a></p>
+                    <p>📱 <a href="tel:+919789942943">+91 97899-42943</a></p>
+                    <p>📍 Korattur, Chennai - 600080</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 KKK Business Solutions. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
+        // Form submission (replace with your backend)
+        const form = document.querySelector('.contact-form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you shortly.');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>
