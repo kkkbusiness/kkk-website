@@ -33,6 +33,25 @@
     const btn = document.getElementById('themeToggle');
     if(btn) btn.addEventListener('click', toggle);
 
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    if(hamburger && navMenu) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
+      });
+      // Close menu when link is clicked
+      navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navMenu.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', false);
+        });
+      });
+    }
+
     // Make iframes responsive by ensuring they have title and loading=lazy
     document.querySelectorAll('iframe').forEach((f, i)=>{
       if(!f.hasAttribute('title')) f.setAttribute('title', `Embedded frame ${i+1}`);
